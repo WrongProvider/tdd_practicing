@@ -8,9 +8,9 @@ import unittest
 class NewVisitorTest(unittest.TestCase):  
 
     def setUp(self):  
-        self.service = Service("/snap/bin/firefox.geckodriver")
-        self.browser = webdriver.Firefox( service=self.service)
-
+       # self.service = Service("/snap/bin/firefox.geckodriver")
+       # self.browser = webdriver.Firefox( service=self.service)
+        self.browser= webdriver.Firefox()
     def tearDown(self):  
         self.browser.quit()
 
